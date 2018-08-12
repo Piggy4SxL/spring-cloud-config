@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+  profiles:
+    active: native
+#        git:
+#          uri: https://github.com/Piggy4SxL/spring-cloud-config-server.git
+#          username: Piggy4SxL
+#          password: "!@#XIlai123"
+#          basedir: E:\Work_Code\spring-cloud\config-basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

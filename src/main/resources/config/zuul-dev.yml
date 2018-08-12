@@ -1,0 +1,5 @@
+#zuul:
+#  routes:
+#    config-client: /cc/**
+#  ignored-patterns:
+#    - /cc/**
